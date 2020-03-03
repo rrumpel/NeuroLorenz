@@ -96,39 +96,44 @@ namespace NeuroLorenz
         }
     }
 
-    /*
-     * our target
-     * 
-     * clc;
-     * clear all;
-     * t(1)=0;  %initializing x,y,z,t
-     * x(1)=1;
-     * y(1)=1;
-     * z(1)=1;
-     * sigma=10;   %value of constants
-     * rho=28;
-     * beta=(8/3);
-     * h=0.1;   %step size
-     * t=0:h:100;
-     * g=@(t,x,y,z) x*rho-x.*z-y;
-     * p=@(t,x,y,z) x.*y-beta*z;
-     * for i=1:(length(t)-1) %loop
-     *     k1=h*f(t(i),x(i),y(i),z(i));
-     *     l1=h*g(t(i),x(i),y(i),z(i));
-     *     m1=h*p(t(i),x(i),y(i),z(i));
-     *       k2=h*f(t(i)+h,(x(i)+0.5*k1),(y(i)+(0.5*l1)),(z(i)+(0.5*m1)));
-     *       l2=h*f(t(i)+h,(x(i)+0.5*k1),(y(i)+(0.5*l1)),(z(i)+(0.5*m1)));
-     *       m2=h*f(t(i)+h,(x(i)+0.5*k1),(y(i)+(0.5*l1)),(z(i)+(0.5*m1)));
-     *       k3=h*f(t(i)+h,(x(i)+0.5*k2),(y(i)+(0.5*l2)),(z(i)+(0.5*m2)));
-     *       l3=h*f(t(i)+h,(x(i)+0.5*k2),(y(i)+(0.5*l2)),(z(i)+(0.5*m2)));
-     *       m3=h*f(t(i)+h,(x(i)+0.5*k2),(y(i)+(0.5*l2)),(z(i)+(0.5*m2)));
-     *       k4=h*f(t(i)+h,(x(i)+k3),(y(i)+l3),(z(i)+m3));
-     *       l4=h*g(t(i)+h,(x(i)+k3),(y(i)+l3),(z(i)+m3));
-     *       m4=h*p(t(i)+h,(x(i)+k3),(y(i)+l3),(z(i)+m3));
-     *       x(i+1)=x(i)+h*(1/6)*(k1+2*k2+2*k3+k4); %final equations
-     *       y(i+1)=y(i)+h*(1/6)*(k1+2*k2+2*k3+k4);
-     *       z(i+1)=z(i)+h*(1/6)*(m1+2*m2+2*m3+m4);
-     *     end
-     * plot3(x,y,z)
-     */
+
+
+    //our target
+
+//    clc;
+//      clear all;
+//    sigm=10;
+//bet=8/3;
+//rh=28;
+//f = @(t, a1, a2, a3)[-sigm * a1 + sigm * a2; rh* a1 - a2 - a1* a2; -bet* a3 + a1* a2];
+//    t(1)=0;  %initializing x, y, z, t
+//      x(1)=1;
+//      y(1)=1;
+//      z(1)=1;
+//      sigma = 10;   %value of constants
+//      rho = 28;
+//    beta = (8 / 3);
+//      h = 0.1;   %step size
+//      t = 0:h:100;
+//      g =@(t, x, y, z) x* rho-x.* z-y;
+//      p =@(t, x, y, z) x.*y-beta* z;
+//      for i=1:(length(t)-1) %loop
+//      k1 = h * f(t(i), x(i), y(i), z(i));
+//    l1 = h* g(t(i), x(i), y(i), z(i));
+//    m1 = h* p(t(i), x(i), y(i), z(i));
+//    k2 = h* f(t(i) + h, (x(i) + 0.5*k1), (y(i) + (0.5* l1)), (z(i) + (0.5* m1)));
+//      l2 = h* f(t(i) + h, (x(i) + 0.5*k1), (y(i) + (0.5* l1)), (z(i) + (0.5* m1)));
+//      m2 = h* f(t(i) + h, (x(i) + 0.5*k1), (y(i) + (0.5* l1)), (z(i) + (0.5* m1)));
+//      k3 = h* f(t(i) + h, (x(i) + 0.5*k2), (y(i) + (0.5* l2)), (z(i) + (0.5* m2)));
+//      l3 = h* f(t(i) + h, (x(i) + 0.5*k2), (y(i) + (0.5* l2)), (z(i) + (0.5* m2)));
+//      m3 = h* f(t(i) + h, (x(i) + 0.5*k2), (y(i) + (0.5* l2)), (z(i) + (0.5* m2)));
+//      k4 = h* f(t(i) + h, (x(i) + k3), (y(i) + l3), (z(i) + m3));
+//      l4 = h* g(t(i) + h, (x(i) + k3), (y(i) + l3), (z(i) + m3));
+//      m4 = h* p(t(i) + h, (x(i) + k3), (y(i) + l3), (z(i) + m3));
+//      x(i+1)=x(i)+h* (1/6)* (k1+2* k2+2* k3+k4); %final equations
+//      y(i+1)=y(i)+h* (1/6)* (k1+2* k2+2* k3+k4);
+//      z(i+1)=z(i)+h* (1/6)* (m1+2* m2+2* m3+m4);
+//      end
+//      plot3(x, y, z)
+
 }
