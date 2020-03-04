@@ -20,9 +20,22 @@ namespace NeuroLorenz
     /// </summary>
     public partial class MainWindow : Window
     {
+        Lorenz lorenz = new Lorenz(0, 1, 0);
+        List<Tuple3d> points = new List<Tuple3d>();
+
         public MainWindow()
         {
             InitializeComponent();
+
+            for (int i = 0; i < 8000; i++)
+            {
+                points.Add(lorenz.GetCurrentLocation());
+                lorenz.Iterate();
+                //MainPolyline.Points.Add(new Point(currentPoint.x + 400, currentPoint.z + 400));
+                //lorenz.iterate();
+            }
+
         }
-    }
+
+	}
 }

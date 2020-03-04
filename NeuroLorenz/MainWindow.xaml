@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NeuroLorenz"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="800" Width="800">
+    <Canvas x:Name="Canvas" Height="800" Width="800">
+        <Polyline Name="MainPolyline" Stroke="Black" StrokeThickness="1" Points="400 400 100 100"/>
+    </Canvas>
 </Window>
